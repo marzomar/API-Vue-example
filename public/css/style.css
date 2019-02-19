@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  padding: 50px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
+/* 00d194 */
+
+.meal {
+  display : flex;
+}
+ .card-title {
+   text-align: center;
+ }
+.card-img-top{
+  width: 30vw;
+}
+/*  fond d'ecran image
+background: url("img/background-homepage-1080.jpg") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover; */

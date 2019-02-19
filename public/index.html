@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/progress-circle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <p v-if="loading">Loading</p>
+        <div v-else>
+            <p v-if="meals.length == 0">Aucune donnée &nbsp<button @click="loadData()">Load Data</button></p>
+            <meal v-for="meal in meals" :meal="meal" :key="meal.display_name"></meal>
+        </div>
+    </div>
+
+    <!-- LIBS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- Components -->
+    <script src="js/components/course.js"></script>
+    <script src="js/components/meal.js"></script>
+    <!-- Main -->
+    <script src="js/main.js"></script>
+</body>
+</html>
