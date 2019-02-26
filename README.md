@@ -1,4 +1,4 @@
-# Test foodvisor
+# API Vue example
 ## Prérequis
 1. Node.js
 2. npm
